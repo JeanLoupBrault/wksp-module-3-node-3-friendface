@@ -1,0 +1,15 @@
+<div class="main">
+  <img class="logo" src="images/friendface_logo.png" />
+  <img class="user" src="<%- user.avatarUrl %>" />
+</div>
+<div class="content">
+  <span>
+    <% friendsOfUser.forEach(friend => { %>
+
+    <a href="/user/<%- friend.id %>">
+      <img class="circular--square" src="<%- friend.avatarUrl %>" />
+    </a>
+  </span>
+
+  <% }); %>
+</div>
